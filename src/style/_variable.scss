@@ -1,0 +1,57 @@
+
+/*variables scss*/
+
+$header-height: 8rem;
+
+/*Colors*/
+$first-color: hsl(125, 15%, 28%);
+$first-color-green: hsl(59, 21%, 43%);
+$title-color: hsl(0, 0%, 15%);
+$text-color: hsl(0, 0%, 17%);
+$text-color-light: hsl(43, 4%, 65%);
+$body-color: hsl(0, 0%, 100%);
+
+/*Font*/
+$body-font: 'Roboto Mono', monospace;
+
+$big-font-size: 4rem;
+$h1-font-size: 2.5rem;
+$h2-font-size: 1.5rem;
+$h3-font-size: 1.25rem;
+$normal-font-size: 1rem;
+$small-font-size: 0.8rem;
+$smaller-font-size: 0.7rem;
+$tiny-font-size: 0.6rem;
+
+/*Font weight*/
+$font-normal: 400;
+$font-medium: 500;
+$font-semi-bold: 600;
+
+/*Margins*/
+$mb-0-25: 0.25rem;
+$mb-0-5: 0.2rem;
+$mb-0-75: 0.75rem;
+$mb-1-5: 1.5rem;
+$mb-1: 1rem;
+$mb-2: 2rem;
+$mb-2-5: 2.5rem;
+$mb-3: 3rem;
+
+/*z index*/
+$z-tooltip: 10;
+$z-fixed: 100;
+$z-modal: 1000;
+
+
+/*Responsive*/
+@media screen and (max-width: 992px) {
+    
+    $big-font-size: 2.75rem;
+    $h1-font-size: 1.5rem;
+    $h2-font-size: 1.25rem;
+    $h3-font-size: 1rem;
+    $normal-font-size: 0.9rem;
+    $small-font-size: 0.8rem;
+    $smaller-font-size: 0.7rem;
+}
