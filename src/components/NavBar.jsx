@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { MdClose } from "react-icons/md";
 import { FaBars } from "react-icons/fa";
-// import Logo from "../image/Logo/Logo.png";
+import Logo from "../Images/Logo/Logo1.png";
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
@@ -21,8 +21,7 @@ const NavBar = () => {
     <header className="header">
       <nav className="nav container">
         <Link to="/" className="nav__logo">
-          {/* <img src={Logo} alt="Logo" className="nav__logo-img" /> */}
-          Logo
+          <img src={Logo} alt="Logo" className="nav__logo-img" />
         </Link>
 
         <div className={Toogle ? "nav__menu show-menu" : "nav__menu"}>
