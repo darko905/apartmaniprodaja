@@ -1,5 +1,5 @@
 import Image1 from "../Images/Herobg/apartmani.jpg";
-import Image2 from "../Images/Herobg/contact-form-background.jpg";
+import Image2 from "../Images/Herobg/image.png";
 import Image3 from "../Images/Herobg/apartmani1.jpg";
 
 export const HeroData = [
