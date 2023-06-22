@@ -1,5 +1,5 @@
 import React from "react";
-import AboutMain from "../Images/Herobg/apartmani.jpg";
+import AboutMain from "../Images/About/about_img.jpg";
 const About = () => {
   return (
     <section className="about">

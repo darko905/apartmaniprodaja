@@ -16,7 +16,7 @@
 }
 
 .scroll-header {
-  background-color: hsl(0, 0%, 15%);
+  background-color: hsl(125, 15%, 28%);
   border-bottom: 1px solid hsl(125, 15%, 28%);
 }
 
@@ -239,13 +239,13 @@
   margin-bottom: 4rem;
 }
 
-/*Base*/
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
   scroll-behavior: smooth;
 }
