@@ -86,12 +86,12 @@
     }
     &__icons{
       display: flex;
-      gap:4rem;
+      gap:1rem;
       margin-top: $mb-1;
       margin-bottom: $mb-1;
       justify-content: center;
       @media screen and (max-width: 768px) {
-        gap: 2rem;
+        gap: 1rem;
       }
 
       &-title{
@@ -99,8 +99,15 @@
         flex-direction: column;
         align-items: center;
         color: $first-color;
+        padding: 2rem;
+        @media screen and (max-width: 768px) {
+          padding: 1rem;
+        }
       }
-
+      &-title:nth-child(2){
+        border-left: 1px solid $text-color-light;
+        border-right: 1px solid $text-color-light;
+      }
       &-icon{
         color: $first-color-green; 
         font-size: 2rem;     

@@ -72,11 +72,11 @@ const ApartmanList = () => {
                     <p className="apartman__icons-title"><GiPlainSquare className="apartman__icons-icon"/>45 m2</p>
                     <p className="apartman__icons-title"><BsBuildingUp className="apartman__icons-icon"/>Sprat: 4</p>
                   </div>
-                  <div className="apartman__button">
+                  {/* <div className="apartman__button">
                     <button className="button button--flex">
                       Saznajte više <BsArrowRightShort />
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             
