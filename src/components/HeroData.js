@@ -6,19 +6,19 @@ export const HeroData = [
   {
     id: 1,
     image: Image1,
-    title: "Prodaja Luksuznih apartmana Zlatibor",
+    title: "Prodaja Gold Apartmana",
     alt: "Image",
   },
   {
     id: 2,
     image: Image2,
-    title: "Otvoren tip apartmana za potpuni užitak",
+    title: "Otvoren Tip Apartmana",
     alt: "Image",
   },
   {
     id: 2,
     image: Image3,
-    title: "Dovoljno prostora za okupljanje prijatelja i rad u tisini",
+    title: "Dovoljno Prostora Za Okupljanje",
     alt: "Image",
   },
   

@@ -13,12 +13,12 @@ const Hero = () => {
         setCurrentState(currentState+1)
       }
       
-    }, 5000)
+    }, 6000)
     return ()=> clearTimeout(timer);
   },[currentState])
 
   const bgImageStyle ={
-    backgroundImage: `url(${HeroData[currentState].image})`,
+    backgroundImage: `linear-gradient( rgb(13, 17, 23, 0.8), rgb(13, 17, 23, 0.8)), url(${HeroData[currentState].image})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     height: '100%'
@@ -26,6 +26,7 @@ const Hero = () => {
   
   return (
     <section className="section home">
+      
       <div style={bgImageStyle}></div>
       <h2 className="home__title">{HeroData[currentState].title}</h2>
     </section>

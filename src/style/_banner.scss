@@ -1,0 +1,45 @@
+.banner {
+    &__text {
+      line-height: 1;
+      font-size: 230px;
+      font-weight: 700;
+      color: $text-color;
+      text-transform: uppercase;
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+      white-space: nowrap;
+      
+    }
+  
+    &__text h1 {
+      padding-left: 100%;
+      color: $first-color;
+  
+      animation: marquee 15s linear infinite;
+  
+  
+      @media screen and (max-width: 1200px) {
+        font-size: 150px;
+      }
+      @media screen and (max-width: 992px) {
+        font-size: 100px;
+      }
+      @media screen and (max-width: 768px) {
+          font-size: 80px;
+        }
+       
+  
+    }
+    &__text > h1 span {
+      color: transparent;
+      -webkit-text-stroke: 5px;
+      -webkit-text-stroke-color: #E5BB61;
+    }
+  }
+  @keyframes marquee {
+    100% {
+      transform: translate(-100%, 0);
+    }
+  }
+  
