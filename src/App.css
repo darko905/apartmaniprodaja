@@ -34,8 +34,7 @@
   font-size: 1.25rem;
 }
 .nav__logo-img {
-  width: 80px;
-  height: 80px;
+  height: 45px;
 }
 @media screen and (max-width: 1024px) {
   .nav__logo-img {
@@ -179,8 +178,10 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  letter-spacing: 0.5rem;
   color: hsl(0, 0%, 100%);
   font-size: 3.5rem;
+  width: 70%;
 }
 
 .about-main {
@@ -465,6 +466,88 @@
   resize: none;
 }
 
+.service__container {
+  grid-template-columns: repeat(3, 20rem);
+  justify-content: center;
+  margin-top: 4rem;
+}
+
+.service__content {
+  text-align: center;
+  border: 1px solid hsl(59, 21%, 43%);
+  padding: 10px 15px;
+  box-shadow: 12px 12px 2px 1px rgba(133, 132, 87, 0.2);
+  gap: 3rem;
+}
+
+.service__icons {
+  width: 85px;
+  height: 85px;
+  padding: 10px;
+}
+
+.service__title {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  color: hsl(125, 15%, 28%);
+}
+
+.service__descritpion {
+  color: hsl(43, 4%, 65%);
+}
+
+@media screen and (max-width: 992px) {
+  .service__container {
+    grid-template-columns: repeat(2, 270px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .service__container {
+    grid-template-columns: 1fr;
+  }
+}
+.banner__text {
+  line-height: 1;
+  font-size: 230px;
+  font-weight: 700;
+  color: hsl(0, 0%, 17%);
+  text-transform: uppercase;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+}
+.banner__text h1 {
+  padding-left: 100%;
+  color: hsl(125, 15%, 28%);
+  animation: marquee 15s linear infinite;
+}
+@media screen and (max-width: 1200px) {
+  .banner__text h1 {
+    font-size: 150px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .banner__text h1 {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner__text h1 {
+    font-size: 80px;
+  }
+}
+.banner__text > h1 span {
+  color: transparent;
+  -webkit-text-stroke: 5px;
+  -webkit-text-stroke-color: #E5BB61;
+}
+
+@keyframes marquee {
+  100% {
+    transform: translate(-100%, 0);
+  }
+}
 /*Base*/
 * {
   margin: 0;

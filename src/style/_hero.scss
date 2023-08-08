@@ -3,15 +3,18 @@
  
   height: 100vh;
   position: relative;
-
+  
   &__title {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    letter-spacing: .5rem;
     color: $body-color;
     font-size: 3.5rem;
+    width: 70%;
+    
     
   }
 }
