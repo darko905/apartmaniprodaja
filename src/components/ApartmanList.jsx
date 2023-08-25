@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { createClient } from "contentful";
 import { FaBed } from "react-icons/fa";
-import { BsArrowRightShort, BsBuildingUp } from "react-icons/bs";
+import {  BsBuildingUp } from "react-icons/bs";
 import { GiPlainSquare } from "react-icons/gi";
 import { Link } from "react-router-dom";
 
@@ -15,8 +15,8 @@ const ApartmanList = () => {
   };
 
   const client = createClient({
-    space: "iv2ffb7mednh",
-    accessToken: "FPGPSxWGQBNokd_sJN0nK2LLimYi7frJA8BvlgS6i5Y",
+    space: "r7x9e8mlne8k",
+    accessToken: "gNzJQdNetApMn5NYLXNG_AXvmzpu8cZQp8FIgKHNHAM",
   });
 
   useEffect(() => {
@@ -68,9 +68,9 @@ const ApartmanList = () => {
                   </p>
                   <div className="apartman__icons">
                     
-                    <p className="apartman__icons-title"><FaBed className="apartman__icons-icon" />Soba: 1</p>
-                    <p className="apartman__icons-title"><GiPlainSquare className="apartman__icons-icon"/>45 m2</p>
-                    <p className="apartman__icons-title"><BsBuildingUp className="apartman__icons-icon"/>Sprat: 4</p>
+                    <p className="apartman__icons-title"><FaBed className="apartman__icons-icon" />Soba: {post.fields.productRoom}</p>
+                    <p className="apartman__icons-title"><GiPlainSquare className="apartman__icons-icon"/>{post.fields.productSquare} m2</p>
+                    <p className="apartman__icons-title"><BsBuildingUp className="apartman__icons-icon"/>Sprat: {post.fields.productFloor}</p>
                   </div>
                   {/* <div className="apartman__button">
                     <button className="button button--flex">

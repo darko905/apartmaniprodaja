@@ -2,10 +2,10 @@ import React, { useEffect, useState } from "react";
 import { createClient } from "contentful";
 import { FaBed } from "react-icons/fa";
 import { HiLocationMarker } from "react-icons/hi";
-import { AiFillPhone } from "react-icons/ai";
+// import { AiFillPhone } from "react-icons/ai";
 import { useParams } from "react-router-dom";
 
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { GiPlainSquare } from "react-icons/gi";
 import { BsBuildingUp } from "react-icons/bs";
 
@@ -15,8 +15,8 @@ const ApartmanDetails = () => {
   const [singleApartman, setSingleApartman] = useState([]);
 
   const client = createClient({
-    space: "iv2ffb7mednh",
-    accessToken: "FPGPSxWGQBNokd_sJN0nK2LLimYi7frJA8BvlgS6i5Y",
+    space: "r7x9e8mlne8k",
+    accessToken: "gNzJQdNetApMn5NYLXNG_AXvmzpu8cZQp8FIgKHNHAM",
   });
 
   const { id } = useParams();
