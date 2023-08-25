@@ -17,18 +17,13 @@ const Hero = () => {
     return ()=> clearTimeout(timer);
   },[currentState])
 
-  const bgImageStyle ={
-    backgroundImage: `linear-gradient( rgb(13, 17, 23, 0.8), rgb(13, 17, 23, 0.8)), url(${HeroData[currentState].image})`,
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    height: '100%'
-   }
-  
   return (
     <section className="section home">
-      
-      <div style={bgImageStyle}></div>
+      <div className="home__hero">
+      <img className="home__img" src={HeroData[currentState].image} alt=""/>
       <h2 className="home__title">{HeroData[currentState].title}</h2>
+      </div>
+      
     </section>
   );
 };

@@ -1,0 +1,11 @@
+.comingSoon{
+    background-color: $first-color-green;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+    &__title{
+        color: white !important;
+    }
+    
+}
