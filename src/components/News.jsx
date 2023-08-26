@@ -14,7 +14,7 @@ const News = () => {
   });
 
   useEffect(() => {
-    setTimeout(() => {
+    
       const getAllEntries = async () => {
         try {
           await client.getEntries().then((entries) => {
@@ -28,7 +28,7 @@ const News = () => {
       };
 
       getAllEntries();
-    }, 1000);
+    
   }, []);
   return (
     <section className="section news" id="news">
@@ -38,19 +38,20 @@ const News = () => {
           {apartmanPostBlog?.items?.map((post) => (
             
               <div className="news__card" key={post.sys.id}>
-                <Link to={`/`}>
+                <Link to={`/singleNews/${post.sys.id}`}>
                 <img
                   src={post.fields.blogImage.fields.file.url}
                   alt='{post.fields.title}'
                   className="news__img"
                 />
-                </Link>
-                <div className="anews__card-basic">
+                
+                {/* <div className="anews__card-basic"> */}
                   <h2 className="news__title">
                     {post.fields.blogTitle}
                   </h2>
                  
-                </div>
+                {/* </div> */}
+                </Link>
               </div>
             
           ))}
